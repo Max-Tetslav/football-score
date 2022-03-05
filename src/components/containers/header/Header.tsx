@@ -12,7 +12,7 @@ function MyHeader() {
   return (
     <Header className={cl.header}>
       <img src={logo} alt="app-logo" className={cl.logo} />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} disabledOverflow>
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['0']} disabledOverflow>
         {MENU_ITEMS.map((item) => {
           return (
             <Menu.Item key={item.id}>
