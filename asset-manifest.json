@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/football-score/leagues/static/css/main.0361a06c.css",
+    "main.js": "/football-score/leagues/static/js/main.3ca26567.js",
+    "static/media/ball.svg": "/football-score/leagues/static/media/ball.02d372468a45eef91d9ceaa0d9e3c809.svg",
+    "index.html": "/football-score/leagues/index.html",
+    "main.0361a06c.css.map": "/football-score/leagues/static/css/main.0361a06c.css.map",
+    "main.3ca26567.js.map": "/football-score/leagues/static/js/main.3ca26567.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0361a06c.css",
+    "static/js/main.3ca26567.js"
+  ]
+}
