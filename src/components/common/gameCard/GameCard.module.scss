@@ -1,0 +1,40 @@
+.card {
+  width: 100%;
+
+  @media screen and (max-width: 840px) {
+    min-width: 100%;
+  }
+
+  .ant-card-body {
+    padding: 24px 0 !important;
+  }
+}
+
+.cardItem {
+  display: block;
+  text-align: center;
+  @media screen and (max-width: 840px) {
+    font-size: 1.2em;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+.cardItemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 15%;
+  text-align: center;
+
+  @media screen and (max-width: 840px) {
+    min-width: 100%;
+  }
+}
+
+.cardItemTeams {
+  min-width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

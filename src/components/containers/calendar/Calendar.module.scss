@@ -1,0 +1,60 @@
+.content {
+  height: 90%;
+  position: relative;
+  padding: 0 50px;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
+}
+
+.historyPath {
+  margin: 16px 0;
+
+  @media screen and (max-width: 500px) {
+    margin: 16px 10px;
+  }
+}
+
+.pageHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    padding: 10px 0 20px 10px;
+  }
+}
+
+.dataPicker {
+  @media screen and (max-width: 500px) {
+    min-width: 300px;
+  }
+}
+
+.inputContainer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input {
+  width: 400px;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pagination {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
