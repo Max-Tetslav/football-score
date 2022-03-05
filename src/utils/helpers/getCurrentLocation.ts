@@ -1,7 +1,7 @@
 export default function getCurrentLocation() {
-  if (window.location.href.includes('leagues')) {
-    return 'competitions';
+  if (window.location.href.includes('teams')) {
+    return 'teams';
   }
 
-  return 'teams';
+  return 'competitions';
 }

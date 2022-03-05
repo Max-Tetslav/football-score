@@ -19,7 +19,6 @@ function Calendar() {
   const matchesNumState = useAppSelector((state) => state.calendar.matchesNum);
   const title = useAppSelector((state) => state.currentPage.name);
   const currentId = useAppSelector((state) => state.currentPage.id);
-  const currentPage = getCurrentLocation();
   const [matches, setMatches] = useState([] as IMatch[]);
   const [filteredMatches, setFilteredMatches] = useState([] as IMatch[]);
   const [matchesNum, setMatchesNum] = useState(0);
@@ -33,6 +32,7 @@ function Calendar() {
 
   const calendarHandler = useCallback(
     async (_, date: string[]): Promise<void> => {
+      const currentPage = getCurrentLocation();
       const correctDate = date.map((item) => item.split('/').reverse().join('-'));
       const [dateFrom, dateTo] = correctDate;
       const requestedMatches = await fetchMatches(currentId, currentPage, dateFrom, dateTo);
@@ -51,7 +51,7 @@ function Calendar() {
       setMatches(currentMatches);
       setPageNum(1);
     },
-    [currentId, currentPage, pageNum, matches],
+    [currentId, pageNum, matches],
   );
 
   const [fetchTeams, isTeamsLoading, TeamsError] = useFetching(async () => {
